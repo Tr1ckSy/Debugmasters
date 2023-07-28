@@ -42,6 +42,10 @@
                     console.error('Erro ao consultar API:', error);
                     document.getElementById('resultado').textContent = 'Erro ao fazer a consulta. Contate um admin. ';
                 });
+                    function exibirAnuncio() {
+      // Exibe o anúncio de vídeo quando o botão for clicado
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    }
         }
          function copiarConteudo() {
             const resultado = document.getElementById('resultado');
