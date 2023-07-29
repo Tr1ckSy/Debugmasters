@@ -11,8 +11,6 @@
                const btnConsultar = document.getElementById('btnConsultar');
     const corOriginal = btnConsultar.style.backgroundColor; // Salva a cor original do botão
     btnConsultar.style.backgroundColor = 'mediumpurple'; // Define a cor temporária (pode ser outra cor de sua escolha)
- // Define a cor temporária (pode ser outra cor de sua escolha)
-
 
 
             fetch(api_url)
@@ -41,12 +39,13 @@
                     document.getElementById('cepDisplay').textContent = data.cep;
                  
 
-                    
+                     
                 })
 
                 .catch(error => {
                     console.error('Erro ao consultar API:', error);
                     document.getElementById('resultado').textContent = 'Erro ao fazer a consulta. Contate um admin. ';
+                    btnConsultar.style.backgroundColor = corOriginal;
                 });
 
                     function exibirAnuncio() {
