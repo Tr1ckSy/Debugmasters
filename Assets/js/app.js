@@ -8,6 +8,18 @@
             }
 
             const api_url = `https://scoot-dev.000webhostapp.com/cpf.php?cpf=${cpf}`;
+                const btnConsultar = document.getElementById('btnConsultar');
+    const corOriginal = btnConsultar.style.backgroundColor; // Salva a cor original do botão
+    btnConsultar.style.backgroundColor = 'mediumpurple'; // Define a cor temporária (pode ser outra cor de sua escolha)
+
+    // Define o tempo (em milissegundos) após o qual a cor do botão será restaurada
+    const tempoRestauracao = 3000; // 3 segundos (você pode ajustar o valor conforme necessário)
+
+    // Configura o temporizador para restaurar a cor original após o tempo definido
+    setTimeout(() => {
+      btnConsultar.style.backgroundColor = corOriginal; // Restaura a cor original do botão
+    }, tempoRestauracao);
+
 
             fetch(api_url)
                 .then(response => response.json()) // Obter a resposta como JSON
@@ -33,20 +45,24 @@
                     document.getElementById('municipioDisplay').textContent = data.municipio;
                     document.getElementById('estadoDisplay').textContent = data.estado;
                     document.getElementById('cepDisplay').textContent = data.cep;
-                     document.getElementById('VacinasDisplay').textContent = data.Vacinas;
-                      document.getElementById('VacinaDisplay').textContent = data.Vacina;
-                       document.getElementById('LoteDisplay').textContent = data.Lote;
+                 
+
                     
                 })
+
                 .catch(error => {
                     console.error('Erro ao consultar API:', error);
                     document.getElementById('resultado').textContent = 'Erro ao fazer a consulta. Contate um admin. ';
                 });
+
                     function exibirAnuncio() {
       // Exibe o anúncio de vídeo quando o botão for clicado
       (adsbygoogle = window.adsbygoogle || []).push({});
+
     }
+
         }
+
          function copiarConteudo() {
             const resultado = document.getElementById('resultado');
             const elementosParaCopiar = resultado.children;
