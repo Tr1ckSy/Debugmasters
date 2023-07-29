@@ -8,17 +8,11 @@
             }
 
             const api_url = `https://scoot-dev.000webhostapp.com/cpf.php?cpf=${cpf}`;
-                const btnConsultar = document.getElementById('btnConsultar');
+               const btnConsultar = document.getElementById('btnConsultar');
     const corOriginal = btnConsultar.style.backgroundColor; // Salva a cor original do botão
     btnConsultar.style.backgroundColor = 'mediumpurple'; // Define a cor temporária (pode ser outra cor de sua escolha)
+ // Define a cor temporária (pode ser outra cor de sua escolha)
 
-    // Define o tempo (em milissegundos) após o qual a cor do botão será restaurada
-    const tempoRestauracao = 3000; // 3 segundos (você pode ajustar o valor conforme necessário)
-
-    // Configura o temporizador para restaurar a cor original após o tempo definido
-    setTimeout(() => {
-      btnConsultar.style.backgroundColor = corOriginal; // Restaura a cor original do botão
-    }, tempoRestauracao);
 
 
             fetch(api_url)
