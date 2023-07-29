@@ -58,6 +58,8 @@ background: linear-gradient(146deg, rgba(255,255,255,1) 0%, rgba(244,244,244,1) 
         }
 
         .input-group button {
+            transition: 500ms linear;
+            transition: 0.2s;
              padding: 10px 20px;
             border: none;
             border-radius: 5px;
@@ -79,8 +81,9 @@ background: linear-gradient(146deg, rgba(255,255,255,1) 0%, rgba(244,244,244,1) 
         	padding: 0;
         	margin: 0;
         }
-        .conteudo {
-         
+        .input-group button:hover {
+
+            background-color: mediumpurple;
         }
         @media (max-width: 750px) {
             .input-group {
