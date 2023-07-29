@@ -38,7 +38,7 @@
                     document.getElementById('estadoDisplay').textContent = data.estado;
                     document.getElementById('cepDisplay').textContent = data.cep;
                  
-
+                    btnConsultar.style.backgroundColor = corOriginal;
                      
                 })
 
