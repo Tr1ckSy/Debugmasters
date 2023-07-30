@@ -48,11 +48,6 @@
                     btnConsultar.style.backgroundColor = corOriginal;
                 });
 
-                    function exibirAnuncio() {
-      // Exibe o anúncio de vídeo quando o botão for clicado
-      (adsbygoogle = window.adsbygoogle || []).push({});
-
-    }
 
         }
 
