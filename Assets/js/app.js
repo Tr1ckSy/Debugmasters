@@ -82,3 +82,12 @@
             // Exibe uma mensagem para o usuário
             alert('Conteúdo copiado para a área de transferência.');
         }
+  function aumentarContador() {
+      let contadorAtual = parseInt(localStorage.getItem("contador")) || 0;
+      contadorAtual++;
+      localStorage.setItem("contador", contadorAtual);
+      document.getElementById("contador").textContent = contadorAtual;
+    }
+
+    // Exibir o valor atual do contador no console
+    console.log("Acessos: " + localStorage.getItem("contador"));
