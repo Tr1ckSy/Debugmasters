@@ -84,4 +84,3 @@
             alert('Conteúdo copiado para a área de transferência.');
         }
  
- 
