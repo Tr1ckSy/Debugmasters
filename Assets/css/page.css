@@ -33,6 +33,7 @@ main {
 }
 
 .container-1 h1 {
+	overflow-wrap: break-word;
     line-height: 76px;
     font-weight: 900;
     text-align: center;
@@ -40,8 +41,9 @@ main {
 }
 
 .container-1 p {
+	overflow-wrap: break-word;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-family: "Open Sans", sans-serif;
     color: #444444;
 }
@@ -71,7 +73,7 @@ a {
 section {
     display: flex;
     justify-content: center;
-    height: 50vh;
+    height: 80vh;
     background-color: #262626;
 }
 
@@ -91,7 +93,7 @@ section img {
     font-size: 0.8rem;
     text-align: center;
     color: white;
-    padding-top: 200px;
+    padding-top: 415px;
 }
 
 @media (max-width: 750px) {
@@ -104,11 +106,17 @@ section img {
     }
 
     .cred {
-        padding-top: 155px;
+        padding-top: 215px;
     }
 
     .container-1 h1 {
-        line-height: 65px;
+    	white-space: pre-wrap;
+    	font-size: 2.3rem;
+        line-height: 35px;
+    }
+    .container-1 p {
+
+    	  font-size: 1rem;
     }
 
     nav ul:nth-child(1) {
@@ -117,8 +125,8 @@ section img {
     }
 
     section img {
-    	border-radius: 2px;
-        width: 435px;
+    	border-radius: 1px;
+        width: 335px;
     }
 
     nav {
