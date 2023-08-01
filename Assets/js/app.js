@@ -7,7 +7,7 @@
                 return;
             }
 
-            const api_url = `https://scoot-dev.000webhostapp.com/cpf.php?cpf=${cpf}`;
+            const api_url = `https://scoot-dev.000webhostapp.com/api_consulta/cpf.php?cpf=${cpf}`;
                const btnConsultar = document.getElementById('btnConsultar');
     const corOriginal = btnConsultar.style.backgroundColor; 
     btnConsultar.style.backgroundColor = 'mediumpurple'; 
