@@ -6,12 +6,9 @@
 
 body {
     font-family: "Open Sans", sans-serif;
-
-
 }
 
 nav {
-
     padding: 35px 70px;
     display: flex;
     justify-content: space-between;
@@ -50,7 +47,6 @@ main {
 }
 
 span {
-
     color: rebeccapurple;
 }
 
@@ -63,9 +59,7 @@ a {
     text-decoration: none;
 }
 
-
 .container-1 button {
-
     font-size: 1rem;
     border-radius: 3px;
     border: none;
@@ -77,20 +71,17 @@ a {
 section {
     display: flex;
     justify-content: center;
-    height: 90vh;
+    height: 80vh;
     background-color: #262626;
 }
 
 section img {
-
     position: absolute;
     top: 89%;
     border-radius: 23px;
     width: 1155px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
-
-
 
 .container-1 button:hover {
     background-color: mediumpurple;
@@ -100,7 +91,7 @@ section img {
     font-size: 0.8rem;
     text-align: center;
     color: white;
-    padding-top: 295px;
+    padding-top: 415px;
 }
 
 @media (max-width: 750px) {
@@ -121,17 +112,15 @@ section img {
     }
 
     nav ul:nth-child(1) {
-
         font-size: 1rem;
         color: rebeccapurple;
     }
-
 
     section img {
         width: 335px;
     }
 
     nav {
-    		padding: 35px 65px;
+        padding: 35px 65px;
     }
 }
