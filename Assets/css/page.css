@@ -9,9 +9,10 @@ body {
 }
 
 nav {
+    align-items: center;
     padding: 35px 70px;
     display: flex;
-    justify-content: space-between;
+    justify-content:center;
 }
 
 nav ul:nth-child(1) {
@@ -98,24 +99,24 @@ section img {
 
 @media (max-width: 750px) {
     main {
-        height: 95vh;
+        height: 75vh;
     }
 
     section {
-        height: 55vh;
+        height: 35vh;
     }
 
     .cred {
-        padding-top: 215px;
+        padding-top: 155px;
     }
 
     .container-1 h1 {
-    	white-space: pre-wrap;
-    	font-size: 2.3rem;
+    	
+    	font-size: 2.6rem;
         line-height: 35px;
     }
     .container-1 p {
-
+        white-space: break-spaces;
     	  font-size: 1rem;
     }
 
@@ -125,11 +126,10 @@ section img {
     }
 
     section img {
-    	border-radius: 1px;
+        top: 75%;
+    	border-radius: 6px;
         width: 335px;
     }
 
-    nav {
-        padding: 35px 65px;
-    }
+ 
 }
