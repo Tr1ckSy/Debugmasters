@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+
+
+}
+
+nav {
+
+    padding: 35px 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul:nth-child(1) {
+    font-size: 1.5em;
+    color: rebeccapurple;
+}
+
+main {
+    height: 135vh;
+}
+
+.container-1 {
+    gap: 18px;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-1 h1 {
+    line-height: 76px;
+    font-weight: 900;
+    text-align: center;
+    font-size: 4em;
+}
+
+.container-1 p {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "Open Sans", sans-serif;
+    color: #444444;
+}
+
+span {
+
+    color: rebeccapurple;
+}
+
+a:hover {
+    color: mediumpurple;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.container-1 button {
+
+    font-size: 1rem;
+    border-radius: 3px;
+    border: none;
+    padding: 15px 75px;
+    color: white;
+    background-color: rebeccapurple;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+    background-color: #262626;
+}
+
+section img {
+
+    position: absolute;
+    top: 89%;
+    border-radius: 23px;
+    width: 1155px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+footer {
+    height: 20vh;
+    background-color: #444;
+}
+
+.container-1 button:hover {
+    background-color: mediumpurple;
+}
+
+.cred {
+    font-size: 0.8rem;
+    text-align: center;
+    color: white;
+    padding-top: 455px;
+}
+
+@media (max-width: 750px) {
+    main {
+        height: 95vh;
+    }
+
+    section {
+        height: 55vh;
+    }
+
+    .cred {
+        padding-top: 215px;
+    }
+
+    .container-1 h1 {
+        line-height: 65px;
+    }
+
+    nav ul:nth-child(1) {
+
+        font-size: 1rem;
+        color: rebeccapurple;
+    }
+
+
+    section img {
+        width: 335px;
+    }
+
+    nav {
+    		padding: 35px 65px;
+    }
+}
