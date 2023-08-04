@@ -12,7 +12,7 @@ nav {
     align-items: center;
     padding: 35px 70px;
     display: flex;
-    justify-content:center;
+    justify-content: space-between;
 }
 
 nav ul:nth-child(1) {
@@ -21,12 +21,14 @@ nav ul:nth-child(1) {
 }
 
 main {
+        background: rgb(255,255,255);
+background: linear-gradient(175deg, rgba(255,255,255,1) 0%, rgba(244,244,244,1) 33%, rgba(87,77,198,1) 155%);
     height: 135vh;
 }
 
 .container-1 {
     gap: 18px;
-    height: 70vh;
+    height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,7 +37,7 @@ main {
 
 .container-1 h1 {
 	overflow-wrap: break-word;
-    line-height: 76px;
+    line-height: 70px;
     font-weight: 900;
     text-align: center;
     font-size: 4em;
@@ -79,6 +81,7 @@ section {
 }
 
 section img {
+
     position: absolute;
     top: 89%;
     border-radius: 23px;
@@ -97,6 +100,11 @@ section img {
     padding-top: 415px;
 }
 
+ul img {
+    height: 40px;
+    border-radius: 6px;
+    width: 40px;
+}
 @media (max-width: 750px) {
     main {
         height: 75vh;
@@ -112,12 +120,12 @@ section img {
 
     .container-1 h1 {
     	
-    	font-size: 2.6rem;
+    	font-size: 2.5rem;
         line-height: 35px;
     }
     .container-1 p {
         white-space: break-spaces;
-    	  font-size: 1rem;
+    	  font-size: 0.6rem;
     }
 
     nav ul:nth-child(1) {
@@ -130,6 +138,9 @@ section img {
     	border-radius: 6px;
         width: 335px;
     }
+.container-1 {
+     height: 55vh;
 
+}
  
 }
