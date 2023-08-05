@@ -52,7 +52,9 @@ background: linear-gradient(175deg, rgba(255,255,255,1) 0%, rgba(244,244,244,1) 
 }
 
 span {
-    color: rebeccapurple;
+   background: linear-gradient(45deg, #8E43AD, #2980B9);
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 a:hover {
@@ -104,6 +106,9 @@ ul img {
     height: 40px;
     border-radius: 6px;
     width: 40px;
+}
+#nome {
+
 }
 @media (max-width: 750px) {
     main {
