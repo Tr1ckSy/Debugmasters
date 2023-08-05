@@ -17,7 +17,7 @@
 	</header>
 	<main>
 		<div class="container-1">
-			<h1>Consulte Gratis e<br> de maneira <span> rapida</span> </h1>
+			<h1>Consulte Gratis e<br> de maneira <span id="nome"> </span> </h1>
 			<p>O nosso simples painel permite consulta cpf  alem de gratis, simples, e rapido. <br> venha ja fazer sua consulta com debugmaster.</p>
 			<a href="painel.html"><button>Começa</button></a>
 		</div>
@@ -28,6 +28,44 @@
 		<p><a href="https://github.com/Saint-dev?tab=repositories">Github</a> - <a href="https://t.me/DebugMasters">telegram</a></p></div>
 		
 	</section>
-	
+	<script>
+		const nomes = ["rapida", "simples", " e organizada"];
+    let nomeAtual = 0;
+    let letraAtual = 0;
+    let intervalo;
+    let apagando = false;
+
+    function digitarNome() {
+      const spanNome = document.getElementById("nome");
+      const nome = nomes[nomeAtual];
+
+      if (apagando) {
+        spanNome.textContent = nome.substring(0, letraAtual);
+        letraAtual--;
+
+        if (letraAtual >= 0) {
+          intervalo = setTimeout(digitarNome, 100); // Intervalo de 100ms para apagar
+        } else {
+          apagando = false;
+          letraAtual = 0;
+          nomeAtual = (nomeAtual + 1) % nomes.length;
+          setTimeout(digitarNome, 1500); // Tempo para começar a escrever o próximo nome
+        }
+      } else {
+        if (letraAtual < nome.length) {
+          spanNome.textContent += nome.charAt(letraAtual);
+          letraAtual++;
+          intervalo = setTimeout(digitarNome, 100); // Intervalo de 100ms entre as letras
+        } else {
+          apagando = true;
+          setTimeout(digitarNome, 1500); // Tempo para começar a apagar o nome
+        }
+      }
+    }
+
+    // Inicia a animação de digitação após um breve intervalo
+    setTimeout(digitarNome, 1000); // Tempo de espera de 1 segundo
+  </script>
+	</script>
 </body>
 </html>         
