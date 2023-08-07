@@ -3,71 +3,71 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
 	<link rel="stylesheet" href="Assets/css/page.css">
-	 <link rel="icon" href="Assets/logo-debug.jpg">
-	 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4118331204934319"
-     crossorigin="anonymous"></script>
+	<link rel="icon" href="Assets/logo-debug.jpg">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4118331204934319" crossorigin="anonymous"></script>
 	<title>Debug Masters</title>
 </head>
 <body>
 	<header>
 		<nav>
-			<ul> <img src="Assets/logo-debug.jpg" alt=""></ul>
-			<ul> <a href="https://github.com/Saint-dev/Debugmasters"><img src="Assets/logotipo-do-github.png" alt="logo do github" ></a></ul>
+			<ul>
+				<img src="Assets/logo-debug.jpg" alt="Logo do painel de consulta">
+			</ul>
+			<ul><a href="https://github.com/Saint-dev/Debugmasters"><img src="Assets/logotipo-do-github.png" alt="logo do github" ></a></ul>
 		</nav>
 	</header>
 	<main>
 		<div class="container-1">
-			<h1>Consulte Gratis e<br> de maneira <span id="nome"> </span> </h1>
-			<p>O nosso simples painel permite consulta cpf  alem de gratis, simples, e rapido. <br> venha ja fazer sua consulta com debugmaster.</p>
-			<a href="painel.html"><button>Começa</button></a>
+			<h1>Consulte Grátis e<br> de Maneira <span id="nome"></span></h1>
+			<p>Nosso simples painel permite consulta CPF de maneira grátis, simples e rápida.<br> Venha já fazer sua consulta com a Debug Masters.</p>
+			<a href="painel.html"><button>Começar</button></a>
 		</div>
 	</main>
 	<section>
-		<img src="Assets/Capturar.png" alt="screenshots do painel de consulta debugmasters">
-		<div class="cred"><h1>Feito com ♡ por <span><a href="https://t.me/xSaintDev">Saint</a></span> and <span><a href="https://t.me/xFlowDev">Flow</a></span></h1>
-		<p><a href="https://github.com/Saint-dev?tab=repositories">Github</a> - <a href="https://t.me/DebugMasters">telegram</a></p></div>
-		
+		<img src="Assets/Capturar.png" alt="screenshots do painel de consulta Debug Masters">
+		<div class="cred">
+			<h1>Feito com ♡ por <span><a href="https://t.me/xSaintDev">Saint</a></span> e <span><a href="https://t.me/xFlowDev">Flow</a></span></h1>
+			<p><a href="https://github.com/Saint-dev?tab=repositories">Github</a> - <a href="https://t.me/DebugMasters">Telegram</a></p>
+		</div>
 	</section>
 	<script>
-		const nomes = ["rapida", "simples", " e organizada"];
-    let nomeAtual = 0;
-    let letraAtual = 0;
-    let intervalo;
-    let apagando = false;
+		const nomes = ["rápida", "simples", "organizada"];
+		let nomeAtual = 0;
+		let letraAtual = 0;
+		let intervalo;
+		let apagando = false;
 
-    function digitarNome() {
-      const spanNome = document.getElementById("nome");
-      const nome = nomes[nomeAtual];
+		function digitarNome() {
+			const spanNome = document.getElementById("nome");
+			const nome = nomes[nomeAtual];
 
-      if (apagando) {
-        spanNome.textContent = nome.substring(0, letraAtual);
-        letraAtual--;
+			if (apagando) {
+				spanNome.textContent = nome.substring(0, letraAtual);
+				letraAtual--;
 
-        if (letraAtual >= 0) {
-          intervalo = setTimeout(digitarNome, 100); // Intervalo de 100ms para apagar
-        } else {
-          apagando = false;
-          letraAtual = 0;
-          nomeAtual = (nomeAtual + 1) % nomes.length;
-          setTimeout(digitarNome, 1500); // Tempo para começar a escrever o próximo nome
-        }
-      } else {
-        if (letraAtual < nome.length) {
-          spanNome.textContent += nome.charAt(letraAtual);
-          letraAtual++;
-          intervalo = setTimeout(digitarNome, 100); // Intervalo de 100ms entre as letras
-        } else {
-          apagando = true;
-          setTimeout(digitarNome, 1500); // Tempo para começar a apagar o nome
-        }
-      }
-    }
+				if (letraAtual >= 0) {
+					intervalo = setTimeout(digitarNome, 100); // Intervalo de 100ms para apagar
+				} else {
+					apagando = false;
+					letraAtual = 0;
+					nomeAtual = (nomeAtual + 1) % nomes.length;
+					setTimeout(digitarNome, 1500); // Tempo para começar a escrever o próximo nome
+				}
+			} else {
+				if (letraAtual < nome.length) {
+					spanNome.textContent += nome.charAt(letraAtual);
+					letraAtual++;
+					intervalo = setTimeout(digitarNome, 100); // Intervalo de 100ms entre as letras
+				} else {
+					apagando = true;
+					setTimeout(digitarNome, 1500); // Tempo para começar a apagar o nome
+				}
+			}
+		}
 
-    // Inicia a animação de digitação após um breve intervalo
-    setTimeout(digitarNome, 1000); // Tempo de espera de 1 segundo
-  </script>
+		// Inicia a animação de digitação após um breve intervalo
+		setTimeout(digitarNome, 1000); // Tempo de espera de 1 segundo
 	</script>
 </body>
-</html>         
+</html>
