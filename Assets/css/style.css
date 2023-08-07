@@ -1,7 +1,7 @@
+
      body {
 
-     	background: rgb(255,255,255);
-background: linear-gradient(146deg, rgba(255,255,255,1) 0%, rgba(244,244,244,1) 33%, rgba(87,77,198,1) 155%);
+    
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
@@ -10,25 +10,26 @@ background: linear-gradient(146deg, rgba(255,255,255,1) 0%, rgba(244,244,244,1) 
 
         .container {
          box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-            max-width: 600px;
+            max-width: 500px;
             margin: 50px auto;
             padding: 20px;
             border: 1px solid #ccc;
             border-radius: 6px;
             background-color: #fff;
         }
-         .copia {
+         #copia {
+            text-align: center;
          	transition: 0.3s;
          	margin: 0;
          	padding: 0;
            box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-            max-width:180px;
-            padding: 10px;
+            max-width:200px;
+            padding: 20px 150px;
             border: 1px solid #ccc;
             border-radius: 5px;
             background-color: #fff;
         }
-        .copia:hover {
+        #copia:hover {
         	color: white;
         	background-color: rebeccapurple;
         }
@@ -38,6 +39,11 @@ background: linear-gradient(146deg, rgba(255,255,255,1) 0%, rgba(244,244,244,1) 
         h4 {
         	
             text-align: center;
+        }
+        h1 {
+            background: linear-gradient(45deg, #8E43AD, #2980B9);
+    -webkit-background-clip: text;
+    color: transparent;
         }
         p {
         	margin: 9px;
@@ -69,10 +75,13 @@ background: linear-gradient(146deg, rgba(255,255,255,1) 0%, rgba(244,244,244,1) 
             cursor: pointer;
         }
 
-        #resultado {
-
+        #resultContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            white-space: nowrap;
             margin-top: 20px;
-            padding: 10px;
+            padding: 20px;
             border: 1px solid #ccc;
             border-radius: 5px;
         }

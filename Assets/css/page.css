@@ -1,37 +1,46 @@
+/* Importar a fonte do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+/* Reset de estilos globais */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Estilos do corpo do documento */
 body {
     font-family: "Open Sans", sans-serif;
 }
-h1,
-h2,
-h3,
-{
+
+/* Estilos para cabeçalhos */
+h1, h2, h3 {
     font-family: "Raleway", sans-serif;
 }
+
+/* Estilos da barra de navegação */
 nav {
     align-items: center;
     padding: 35px 70px;
     display: flex;
     justify-content: space-between;
 }
-
+nav ul {
+    display: inline-block;
+    list-style: none;
+}
 nav ul:nth-child(1) {
     font-size: 1.5em;
     color: rebeccapurple;
 }
 
+/* Estilos da seção principal */
 main {
-        background: rgb(255,255,255);
-background: linear-gradient(175deg, rgba(255,255,255,1) 0%, rgba(244,244,244,1) 33%, rgba(87,77,198,1) 155%);
+    background: linear-gradient(175deg, rgba(255,255,255,1) 0%, rgba(244,244,244,1) 33%, rgba(87,77,198,1) 155%);
     height: 135vh;
 }
 
+/* Estilos do contêiner 1 */
 .container-1 {
     gap: 18px;
     height: 60vh;
@@ -42,9 +51,9 @@ background: linear-gradient(175deg, rgba(255,255,255,1) 0%, rgba(244,244,244,1) 
 }
 
 .container-1 h1 {
-  font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
     color: #161a42;
-	overflow-wrap: break-word;
+    overflow-wrap: break-word;
     line-height: 60px;
     font-weight: 900;
     text-align: center;
@@ -52,19 +61,21 @@ background: linear-gradient(175deg, rgba(255,255,255,1) 0%, rgba(244,244,244,1) 
 }
 
 .container-1 p {
-	overflow-wrap: break-word;
+    overflow-wrap: break-word;
     text-align: center;
     font-size: 1.3rem;
     font-family: "Open Sans", sans-serif;
     color: #444444;
 }
 
+/* Estilos para o texto com gradiente */
 span {
-   background: linear-gradient(45deg, #8E43AD, #2980B9);
+    background: linear-gradient(45deg, #8E43AD, #2980B9);
     -webkit-background-clip: text;
     color: transparent;
 }
 
+/* Estilos para links */
 a:hover {
     color: mediumpurple;
 }
@@ -74,8 +85,10 @@ a {
     text-decoration: none;
 }
 
+/* Estilos para o botão no contêiner 1 */
 .container-1 button {
     font-size: 1rem;
+    cursor: pointer;
     border-radius: 3px;
     border: none;
     padding: 15px 75px;
@@ -83,6 +96,7 @@ a {
     background-color: rebeccapurple;
 }
 
+/* Estilos para a seção */
 section {
     display: flex;
     justify-content: center;
@@ -90,19 +104,22 @@ section {
     background-color: #262626;
 }
 
+/* Estilos para imagens na seção */
 section img {
-
     position: absolute;
     top: 89%;
     border-radius: 23px;
-    width: 1155px;
+    width: 100%; /* Ajusta a largura para ocupar 100% do contêiner */
+    max-width: 1155px; /* Limita a largura máxima da imagem */
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
+/* Estilos para o botão no hover */
 .container-1 button:hover {
     background-color: mediumpurple;
 }
 
+/* Estilos para a classe "cred" */
 .cred {
     font-size: 0.8rem;
     text-align: center;
@@ -110,14 +127,14 @@ section img {
     padding-top: 415px;
 }
 
+/* Estilos para imagens em listas não ordenadas */
 ul img {
     height: 40px;
     border-radius: 6px;
     width: 40px;
 }
-#nome {
 
-}
+/* Estilos para dispositivos com largura máxima de 750px */
 @media (max-width: 750px) {
     main {
         height: 75vh;
@@ -131,29 +148,34 @@ ul img {
         padding-top: 155px;
     }
 
+    /* Estilos para o título dentro da classe "container-1" */
     .container-1 h1 {
-    	
-    	font-size: 2.5rem;
+        font-size: 2.5rem;
         line-height: 35px;
     }
+
+    /* Estilos para parágrafos dentro da classe "container-1" */
     .container-1 p {
         white-space: break-spaces;
-    	  font-size: 0.6rem;
+        font-size: 0.6rem;
     }
 
+    /* Estilos para a primeira lista não ordenada dentro da tag "nav" */
     nav ul:nth-child(1) {
         font-size: 1rem;
         color: rebeccapurple;
     }
 
+    /* Estilos para imagens dentro da seção, quando a largura é menor que 750px */
     section img {
         top: 75%;
-    	border-radius: 6px;
-        width: 335px;
+        border-radius: 6px;
+        width: 100%; /* Ajusta a largura para ocupar 100% do contêiner */
+        max-width: 335px; /* Limita a largura máxima da imagem */
     }
-.container-1 {
-     height: 55vh;
 
-}
- 
+    /* Estilos para a classe "container-1" quando a largura é menor que 750px */
+    .container-1 {
+        height: 55vh;
+    }
 }
